@@ -76,7 +76,7 @@ class NN(object):
         self.output_weights = self.output_weights - (rate / n) * g[1] - ((rate / n) * lambd * self.output_weights)
         self.output_bias = self.output_bias - (rate/n) * b[1]
         self.hidden_weights = self.hidden_weights - (rate / n) * g[0] - ((rate / n) * lambd * self.hidden_weights)
-        self.output_bias = self.output_bias - (rate/n) * b[0]
+        self.hidden_bias = self.hidden_bias - (rate/n) * b[0]
 
 '''
 Make the dataset
